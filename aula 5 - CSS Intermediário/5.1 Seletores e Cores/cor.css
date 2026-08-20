@@ -2,9 +2,17 @@ h1{
     color: blue;
 }
 p{
-    color: rgb(160, 160, 160);
+    color: rgb(122, 122, 122);
 }
 
 .destaque{
-    color:red
+    color:red;
+}
+
+body{
+    background-color: rgb(182, 182, 253);
+}
+
+#principal{
+    background-color: #f0f0f0;
 }
