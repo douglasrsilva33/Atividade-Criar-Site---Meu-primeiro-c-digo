@@ -1,0 +1,19 @@
+body{
+    font-family: 'Verdana', sans-serif;
+}
+
+.destaque-negrito{
+    font-weight: bold;
+}
+
+.destaque-italico{
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
