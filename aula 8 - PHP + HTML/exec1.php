@@ -21,7 +21,7 @@
 submit">somar</button>
 
 <?php
-if (isset($_GET["valor1"]) && isset(($_GET["valor2"]))
+if (isset($_GET["valor1"]) && isset(($_GET["valor2"]))){
     $valor1 = $_GET["valor1"];
     $valor2 = $_GET["valor2"];
     $soma = $valor1 + $valor2;
