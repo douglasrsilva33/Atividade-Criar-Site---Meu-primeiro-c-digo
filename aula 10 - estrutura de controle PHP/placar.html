@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Placar de Futebol</title>
+</head>
+<body>
+
+    <h1>Placar do Jogo</h1>
+
+    <label>Time 1:</label>
+    <input type="text" id="time1"><br><br>
+
+    <label>Gols do Time 1:</label>
+    <input type="number" id="gols1"><br><br>
+
+    <label>Time 2:</label>
+    <input type="text" id="time2"><br><br>
+
+    <label>Gols do Time 2:</label>
+    <input type="number" id="gols2"><br><br>
+
+    <button onclick="resultado()">Ver resultado</button>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        function resultado() {
+            let time1 = document.getElementById("time1").value;
+            let gols1 = Number(document.getElementById("gols1").value);
+
+            let time2 = document.getElementById("time2").value;
+            let gols2 = Number(document.getElementById("gols2").value);
+
+            if (gols1 > gols2) {
+                document.getElementById("resultado").innerHTML =
+                    "Vitória do " + time1;
+            } else if (gols2 > gols1) {
+                document.getElementById("resultado").innerHTML =
+                    "Vitória do " + time2;
+            } else {
+                document.getElementById("resultado").innerHTML =
+                    "Empate!";
+            }
+        }
+    </script>
+
+</body>
+</html>
